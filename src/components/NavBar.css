@@ -1,0 +1,80 @@
+.navbar {
+	font-family: "Paprika", sans-serif;
+	background-color: #6f8732;
+}
+
+.navbar-top {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	padding: 0.5rem;
+	border: black 0.5px;
+	border-radius: 0 0 8% 8%;
+}
+
+.logo-button {
+	background-image: url("../assets/images/icons/logoselavi2025.png");
+	background-color: transparent;
+	border: none;
+	width: 100px;
+	height: 60px;
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.logo-button:hover {
+	transform: scale(1.05);
+	transition: transform 0.3s ease;
+}
+
+.navbar-bottom {
+	background-color: #6f8732;
+	text-align: center;
+	color: white;
+	padding: .5rem 0;
+}
+
+.navbar-bottom h1 {
+	margin: 0;
+	font-size: 1.8rem;
+}
+
+.navbar-bottom p {
+	margin: 0;
+	font-size: 1rem;
+	font-style: italic;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8rem;
+	list-style: none;
+	margin-top: 0.5rem;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+.nav-links li a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1rem;
+	transition: color 0.3s ease;
+}
+
+.nav-links li:hover + .croissant {
+	transform: translateX(8px) rotate(5deg) scale(1.1);
+}
+
+.croissant {
+	width: 30px;
+	height: 30px;
+	background-image: url("../assets/images/icons/croissant.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: transform 0.5s ease;
+}
