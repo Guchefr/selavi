@@ -18,7 +18,9 @@ const NavBar = () => {
 					<li>
 						<a href="#quem-somos">Quem somos</a>
 					</li>
+
 					<li className="croissant" />
+
 					<li>
 						<a href="#equipe">Nossa equipe</a>
 					</li>
@@ -30,6 +32,7 @@ const NavBar = () => {
 					<li>
 						<a href="#contato">Contato</a>
 					</li>
+					<li className="croissant" />
 				</ul>
 			</div>
 		</header>

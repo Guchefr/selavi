@@ -1,11 +1,15 @@
-import { useState } from "react";
 import NavBar from "./components/NavBar";
+import Header from "./components/Header";
 import "./App.css";
 
 function App() {
-	const [count, setCount] = useState(0);
-
-	return <NavBar />;
+	return (
+		<>
+			<NavBar />
+			<Header isHome={true} />
+			{/* Aqui virá o resto do seu conteúdo da home */}
+		</>
+	);
 }
 
 export default App;

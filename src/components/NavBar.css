@@ -8,7 +8,6 @@
 	display: flex;
 	justify-content: center;
 	padding: 0.5rem;
-	border: black 0.5px;
 	border-radius: 0 0 8% 8%;
 }
 
@@ -33,40 +32,36 @@
 	text-align: center;
 	color: white;
 	padding: .5rem 0;
-}
-
-.navbar-bottom h1 {
-	margin: 0;
-	font-size: 1.8rem;
-}
-
-.navbar-bottom p {
-	margin: 0;
-	font-size: 1rem;
-	font-style: italic;
+	border-bottom: 1px solid black;
 }
 
 .nav-links {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
-	gap: 0.8rem;
 	list-style: none;
 	margin-top: 0.5rem;
 	padding: 0;
 	flex-wrap: wrap;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .nav-links li a {
 	color: white;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	transition: color 0.3s ease;
 }
 
+.nav-links li a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
 .nav-links li:hover + .croissant {
-	transform: translateX(8px) rotate(5deg) scale(1.1);
+	transform: translateX(8px) rotate(360deg) scale(1.1);
 }
 
 .croissant {
