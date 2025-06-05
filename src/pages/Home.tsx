@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
-
+import { useEffect, useState } from "react";
 import Header from "../components/Header";
-
 import "./Home.css"
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import mesadoces from "../assets/images/studiolike/mesalinda.jpg"
 import tortalimao from "../assets/images/studiolike/tartecitron.jpg";
 import viennoiseries from "../assets/images/studiolike/slide4.jpg";
@@ -13,14 +14,28 @@ import esfera from "../assets/images/studiolike/nossossabores3.jpg";
 import evento1 from "../assets/images/studiolike/eventos1.jpg";
 import evento2 from "../assets/images/studiolike/eventos2.jpg";
 import evento3 from "../assets/images/studiolike/eventos3.jpg";
+import loaderImg from "../assets/images/icons/loader.png";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
 
-    const navigate = useNavigate();
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000); // loader por 2 segundos
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <img src={loaderImg} alt="Carregando..." className="loader-image" />
+      </div>
+    );
+  }
 	return (
 		<>
         
-			
+			<NavBar />
 			<Header isHome={true} />
 
 			<section className="introducao">
@@ -140,6 +155,7 @@ const Home = () => {
 					<button className="btn-destaque" onClick={() => navigate("/contato")}>Contato</button>
 				</div>
 			</section>
+            <Footer />
             
 
 			

@@ -186,3 +186,21 @@ box-shadow: 16px 18px 2px 0px #5c7f2f;
   margin-bottom: 2.5rem;
 }
 
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ocupar a altura total da tela */
+  background-color: rgb(199, 179, 179); /* ou outra cor de fundo */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader-image {
+  width: auto;
+  height: auto;
+  animation: spin 2s linear infinite;
+}
