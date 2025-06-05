@@ -1,14 +1,20 @@
-import NavBar from "./components/NavBar";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
 import "./App.css";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 function App() {
 	return (
-		<>
+		<Router>
 			<NavBar />
-			<Header isHome={true} />
-			{/* Aqui virá o resto do seu conteúdo da home */}
-		</>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				
+			</Routes>
+			<Footer />
+		</Router>
 	);
 }
 

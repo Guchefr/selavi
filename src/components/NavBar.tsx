@@ -1,36 +1,39 @@
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
 	return (
 		<header className="navbar">
 			<div className="navbar-top">
 				<div className="logo">
-					<button
+					<Link to="/" className="logo-link">
+											<button
 						type="button"
 						className="logo-button"
 						title="Selavì Confeitaria"
 					/>
+					</Link>
 				</div>
 			</div>
 
 			<div className="navbar-bottom">
 				<ul className="nav-links">
 					<li>
-						<a href="#quem-somos">Quem somos</a>
+						<Link to="/quem-somos">Quem somos</Link>
 					</li>
 
 					<li className="croissant" />
 
 					<li>
-						<a href="#equipe">Nossa equipe</a>
+						<Link to="/nossa-equipe">Nossa equipe</Link>
 					</li>
 					<li className="croissant" />
 					<li>
-						<a href="#criacao">Nossas criações</a>
+						<Link to="/nossas-criacoes">Nossas criações</Link>
 					</li>
 					<li className="croissant" />
 					<li>
-						<a href="#contato">Contato</a>
+						<Link to="/contato">Contato</Link>
 					</li>
 					<li className="croissant" />
 				</ul>
