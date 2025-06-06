@@ -40,6 +40,13 @@
 	padding-top: 10px;
 	margin-top: 20px;
 	font-family: "Open Sans";
+	line-height: 1.6;
+}
+
+.footer-bottom .cnpj-text {
+  font-size: .9rem; /* menor que o texto normal */
+  display: block;   /* faz o span ficar numa linha separada */
+  margin-top: 8px;  /* espaço acima para dar o “gap” */
 }
 
 .footer-section svg {

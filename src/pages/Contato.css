@@ -1,0 +1,28 @@
+.contato-container {
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    padding: 2rem;
+   
+}
+
+.contato-container h1 {
+    font-family: Paprika, sans-serif;
+    font-size: 2rem;
+    color: #5c7f2f;
+    margin-bottom: 1rem;
+}
+
+.contato-container p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.mapa-selavi {
+    width: 600px;
+    height: 400px;
+    border: #5c7f2f solid 3px;
+    
+}

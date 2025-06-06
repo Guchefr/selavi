@@ -1,3 +1,4 @@
+import "./NossaEquipe.css"
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -16,11 +17,11 @@ const NossaEquipe = () => {
                     <div className="nossoschefs-texto1">
                         <h1>Nossos chefs</h1>
                         <p>
-                            A história na confeitaria é marcada pela dedicação do Chef João, que descobriu sua verdadeira vocação durante o curso de gastronomia. Foi em um mês inteiramente voltado à arte dos doces que ele se encantou pelas possibilidades da confeitaria – um encantamento que rapidamente se transformou em paixão. Determinado a se aprofundar, buscou formação em uma das melhores escolas do mundo, o prestigiado Le Cordon Bleu, em Paris. Foi nessa imersão, cercado pelas mais renomadas pâtisseries francesas, que nasceu o desejo de traduzir esse savoir-faire em criações únicas no Brasil.  Hoje, na Selavì, essa visão se materializa em viennoiseries e doces feitos com técnica, ingredientes frescos e preparações diárias, sempre com o cuidado e a sofisticação que definem a confeitaria francesa.
+                            A história na confeitaria é marcada pela dedicação do Chef João, que descobriu sua verdadeira vocação durante o curso de gastronomia. Foi em um mês inteiramente voltado à arte dos doces que ele se encantou pelas possibilidades da confeitaria, um encantamento que rapidamente se transformou em paixão. Determinado a se aprofundar, buscou formação em uma das melhores escolas do mundo, o prestigiado Le Cordon Bleu, em Paris. Foi nessa imersão, cercado pelas mais renomadas pâtisseries francesas, que nasceu o desejo de traduzir esse savoir-faire em criações únicas no Brasil. Hoje, na Selavì, essa visão se materializa em viennoiseries e doces feitos com técnica, ingredientes frescos e preparações diárias, sempre com o cuidado e a sofisticação que definem a confeitaria francesa.
                         </p>
                     </div>
-                    
-<div className="chef-profile">
+
+                    <div className="chef-profile">
                         <img src={joaoprofile} alt="Chef João" />
                         <p>Chef Pâtissier João Guarnieri</p>
                     </div>
@@ -28,12 +29,12 @@ const NossaEquipe = () => {
 
                 <div className="chefbloco2">
                     <div className="chef-profile">
-                        <img src={natiprofile} alt="Chef Natália" />
+                        <img src={natiprofile} className="nati" alt="Chef Natália" />
                         <p>Chef Boulangère Natália Moura</p>
                     </div>
                     <div className="nossoschefs-texto2">
                         <p>
-                            Ao lado de sua noiva, Chef Natália, com sua herança de panificação italiana, eles criaram a Selavì, no dia 09/09/2021. Uma confeitaria onde cada doce é feito com amor, técnica e ingredientes especiais, sempre com o objetivo de oferecer mais do que um simples sabor, mas uma verdadeira experiência. 
+                            Ao lado de sua noiva, Chef Natália, com sua herança de panificação italiana, eles criaram a Selavì, no dia 09/09/2021. Uma confeitaria onde cada doce é feito com amor, técnica e ingredientes especiais, sempre com o objetivo de oferecer mais do que um simples sabor, mas uma verdadeira experiência.
                             Com quase 4 anos de atuação, a Selavì já conquistou uma clientela fiel, que compartilha da nossa paixão por entregar qualidade e dedicação em cada doce. Continuamos com o mesmo propósito de oferecer, a cada pedaço, uma verdadeira experiência de carinho e sabor.
                         </p>
                     </div>
