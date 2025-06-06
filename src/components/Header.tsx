@@ -8,9 +8,11 @@ import slide5 from "../assets/images/studiolike/slide5.jpg";
 interface HeaderProps {
 	isHome: boolean;
 	image?: string; // para as páginas com imagem única
+	height?: string; // para definir a altura da imagem
+	grayscale?: boolean; // opcional, para aplicar filtro de escala de cinza
 }
 
-const Header = ({ isHome, image }: HeaderProps) => {
+const Header = ({ isHome, image, height = "75vh", grayscale = false }: HeaderProps) => {
 	if (!isHome && !image) return null; // não renderiza nada (ex: página de contato)
 
 	return (
@@ -24,7 +26,8 @@ const Header = ({ isHome, image }: HeaderProps) => {
 					<img src={slide5} id="" alt="Slide 5" />
 				</div>
 			) : (
-				<img className="static-image" src={image} alt="Header" />
+				<img className={`static-image ${grayscale ? "grayscale" : ""}`} src={image} alt="Header" style={{ height }} />
+
 			)}
 		</header>
 	);
