@@ -597,10 +597,10 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 			<section className="introducao">
 				<div className="container">
 					<div className="texto">
-						<h2>
+						<h1>
 							Selavi — <i>c’est la vie…</i><br />
 							<span>mais bem mais gostosa.</span>
-						</h2>
+						</h1>
 						<p>
 							Um toque francês, um sabor brasileiro. Na Selavi, a doçura está em cada detalhe nas receitas feitas com carinho, na leveza dos ingredientes e no prazer de viver o agora.
 							Porque a vida passa rápido, mas um bom doce faz ela parar por um instante.
@@ -657,21 +657,21 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 					<div className="cards">
 
 						<div className="card">
-							<img src={tortaselavi} alt="Torta Selavì" />
+							<img src={tortaselavi} alt="Torta Selavì" title="Torta Selavì" />
 						</div>
 
 
 
 
 						<div className="card">
-							<img src={tartefraise} alt="Tarte aux Fraises" />
+							<img src={tartefraise} alt="Tarte aux Fraises" title="Torta de Morango" />
 						</div>
 
 
 
 
 						<div className="card">
-							<img src={esfera} alt="Esfera Framboesa" />
+							<img src={esfera} alt="Esfera Framboesa" title="Esfera" />
 						</div>
 
 					</div>
@@ -689,21 +689,21 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 					<div className="cards">
 
 						<div className="card">
-							<img src={evento1} alt="Dia dos namorados" />
+							<img src={evento1} alt="Dia dos namorados" title="Caixa de bombons" />
 
 
 						</div>
 
 
 						<div className="card">
-							<img src={evento2} alt="Dia das mães" />
+							<img src={evento2} alt="Dia das mães" title="Cesta de presente" />
 						</div>
 
 
 
 
 						<div className="card">
-							<img src={evento3} alt="Páscoa" />
+							<img src={evento3} alt="Páscoa" title="Ovo de Páscoa" />
 						</div>
 
 					</div>

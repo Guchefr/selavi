@@ -47,7 +47,7 @@ const NossasCriacoes = () => {
 
 
             <main className="nossascriacoes-container">
-                <h1>Nossas criações</h1>
+                <h2>Algumas de nossas criações</h2>
 
                 <div className="criacao-grid">
                     {imagens.map((img, i) => (
