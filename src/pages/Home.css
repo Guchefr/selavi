@@ -9,7 +9,6 @@
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
- 
   background-color: #FEF9F5;
   width: 100%;
   overflow-x: hidden;
@@ -27,11 +26,14 @@ body {
   font-size: 1rem;
   border-radius: 15px;
   cursor: pointer;
-  transition: background-color 0.3s;
+ transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(92, 127, 47, 0.4);
 }
 
 .btn-destaque:hover {
-  background-color: #4c6b26;
+  background: linear-gradient(135deg, #6ea22f, #4c6b26);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(92, 127, 47, 0.7);
 }
 
 /* Seção Introdução */
@@ -70,8 +72,9 @@ body {
 .introducao p {
     font-family: "Open Sans", sans-serif;
   color: black;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 1.5rem;
+  line-height: 1.5;
 }
 
 .introducao .imagem {
@@ -121,7 +124,8 @@ body {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5
 }
 
 /* Cards */

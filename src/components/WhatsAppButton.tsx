@@ -20,6 +20,7 @@ const WhatsAppButton = () => {
             href="https://wa.me/5513996298156"
             target="_blank"
             rel="noopener noreferrer"
+            title="Converse conosco no WhatsApp"
             aria-label="Converse conosco no WhatsApp"
             className={`whatsapp-float ${visible ? "fade-in" : "fade-out"}`}
         >

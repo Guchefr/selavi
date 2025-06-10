@@ -100,7 +100,7 @@
   text-align: center;
 }
 
-/* Botão PDF */
+
 .cardapio-pdf {
   margin-top: 40px;
 }
@@ -115,14 +115,21 @@
   font-size: 1rem;
   border-radius: 15px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(92, 127, 47, 0.4);
 }
 
 .btn-cardapio:hover {
-  background-color: #4c6b26;
+  background: linear-gradient(135deg, #6ea22f, #4c6b26);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(92, 127, 47, 0.7);
 }
+
+
+
 
 /* Responsividade */
 @media (max-width: 1024px) {

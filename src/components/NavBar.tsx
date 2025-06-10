@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 
@@ -17,12 +17,12 @@ const NavBar = () => {
 						<button
 							type="button"
 							className="logo-button"
-							title="Selavì Confeitaria"
+							title="Página inicial"
 						/>
 					</Link>
 				</div>
 
-				{/* Botão hamburguer para mobile */}
+
 				<button
 					className={`hamburger ${menuOpen ? "open" : ""}`}
 					onClick={toggleMenu}
@@ -35,7 +35,7 @@ const NavBar = () => {
 				</button>
 			</div>
 
-			{/* Menu de navegação */}
+
 			<div className={`navbar-bottom ${menuOpen ? "open" : ""}`}>
 				<ul className="nav-links">
 					<li>

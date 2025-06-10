@@ -50,7 +50,7 @@ const Contato = () => {
               </li>
               <li>
                 <img src={emailIcon} alt="Email" />
-                <a href="mailto:contato@selavi.com.br">contato@selavi.com.br</a>
+                <a href="mailto:adm@selaviconfeitaria.com.br">adm@selaviconfeitaria.com.br</a>
               </li>
             </ul>
           </div>

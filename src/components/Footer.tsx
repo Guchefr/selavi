@@ -48,8 +48,8 @@ const Footer = () => {
 						</p>
 						<p>
 							<img src={email} alt="Email" className="footer-icon" />
-							<a href="mailto:contato@selavi.com.br" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
-								contato@selavi.com.br
+							<a href="mailto:adm@selaviconfeitaria.com.br" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+								adm@selaviconfeitaria.com.br
 							</a>
 						</p>
 					</div>

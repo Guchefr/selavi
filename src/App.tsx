@@ -5,6 +5,7 @@ import NossaEquipe from "./pages/NossaEquipe";
 import NossasCriacoes from "./pages/NossasCriacoes";
 import Contato from "./pages/Contato";
 import WhatsAppButton from "./components/WhatsAppButton";
+import ScrollToTop from "./components/ScrollToTop";
 
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
 	return (
 		<Router>
 			<WhatsAppButton />
+			<ScrollToTop />
 
 			<Routes>
 				<Route path="/" element={<Home />} />
