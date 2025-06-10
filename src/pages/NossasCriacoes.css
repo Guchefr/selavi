@@ -1,0 +1,155 @@
+.header-nossas-criacoes {
+  object-fit: cover;
+  object-position: center center; /* foca no topo inicialmente */
+}
+
+@media (min-width: 1024px) {
+  .header-nossas-criacoes {
+    object-position: center 65%;
+    
+  }
+}
+
+.nossascriacoes-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.nossascriacoes-container h1 {
+  font-family: Paprika, sans-serif;
+  color: #5c7f2f;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  display: flex;
+  margin: 50px 0 50px 0;
+}
+
+
+.criacao-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.criacao-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.criacao-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+  border-radius: 10px;
+}
+
+.criacao-card:hover img {
+  transform: scale(1.05);
+}
+
+.criacao-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(102, 102, 102, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.criacao-card:hover .criacao-overlay {
+  opacity: 1;
+}
+
+.criacao-overlay img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.criacao-overlay a {
+  pointer-events: auto;
+  z-index: 3;
+  position: relative;
+}
+
+
+.criacao-overlay a img {
+  cursor: pointer;
+}
+
+
+.criacao-overlay span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Botão PDF */
+.cardapio-pdf {
+  margin-top: 40px;
+}
+
+.btn-cardapio {
+  display: inline-block;
+  margin: 1.5rem auto 0;
+  background-color: #5c7f2f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.btn-cardapio:hover {
+  background-color: #4c6b26;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .criacao-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .criacao-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .criacao-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .criacao-overlay img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .criacao-overlay span {
+    font-size: 0.75rem;
+  }
+  
+}

@@ -15,15 +15,23 @@ import evento1 from "../assets/images/studiolike/eventos1.jpg";
 import evento2 from "../assets/images/studiolike/eventos2.jpg";
 import evento3 from "../assets/images/studiolike/eventos3.jpg";
 
+let loaderShown = false;
+
 
 const Home = () => {
 	const navigate = useNavigate();
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(!loaderShown);
 
 	useEffect(() => {
-		const timer = setTimeout(() => setLoading(false), 6000);
+		if (!loading) return;
+
+		const timer = setTimeout(() => {
+			setLoading(false);
+			loaderShown = true;
+		}, 6000);
+
 		return () => clearTimeout(timer);
-	}, []);
+	}, [loading]);
 
 	if (loading) {
 		return (

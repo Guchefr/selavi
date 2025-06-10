@@ -16,7 +16,7 @@ body {
 
 }
 
-/* Botão de destaque */
+
 .btn-destaque {
     display: block;
   margin: 1.5rem auto 0;
@@ -194,9 +194,9 @@ box-shadow: 16px 18px 2px 0px #5c7f2f;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* ocupa a altura inteira da tela */
-  width: 100vw;  /* ocupa a largura inteira da tela */
-  background-color: beige; /* opcional: fundo branco */
+  height: 100vh; 
+  width: 100vw;  
+  background-color: beige; 
 }
 
 
