@@ -15,6 +15,7 @@ import evento1 from "../assets/images/studiolike/eventos1.jpg";
 import evento2 from "../assets/images/studiolike/eventos2.jpg";
 import evento3 from "../assets/images/studiolike/eventos3.jpg";
 
+
 let loaderShown = false;
 
 
@@ -712,6 +713,7 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 				</div>
 			</section>
 			<Footer />
+
 
 
 
