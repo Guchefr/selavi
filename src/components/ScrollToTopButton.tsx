@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import scroll from "../assets/images/icons/scroll.png"; // seu ícone
+import scroll from "../assets/images/icons/scroll.png";
 
 import "./ScrollToTopButton.css";
 

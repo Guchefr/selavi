@@ -4,16 +4,16 @@ import Header from "../components/Header";
 import "./Home.css"
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import mesadoces from "../assets/images/studiolike/mesalinda.jpg"
-import tortalimao from "../assets/images/studiolike/tartecitron.jpg";
-import viennoiseries from "../assets/images/studiolike/slide4.jpg";
-import parisbrest from "../assets/images/studiolike/parisbrest.jpg";
-import tortaselavi from "../assets/images/studiolike/nossossabores1.jpg";
-import tartefraise from "../assets/images/studiolike/nossossabores2.jpg";
-import esfera from "../assets/images/studiolike/nossossabores3.jpg";
-import evento1 from "../assets/images/studiolike/eventos1.jpg";
-import evento2 from "../assets/images/studiolike/eventos2.jpg";
-import evento3 from "../assets/images/studiolike/eventos3.jpg";
+import mesadoces from "../assets/images/paginas/home/mesalinda.jpg"
+import processos1 from "../assets/images/paginas/home/processosdoces.jpg";
+import tecnicas from "../assets/images/paginas/home/tecnicas.jpg";
+import parisbrest from "../assets/images/paginas/home/parisbrest.jpg";
+import tortaselavi from "../assets/images/paginas/home/nossossabores1.jpg";
+import tartefraise from "../assets/images/paginas/home/nossossabores2.jpg";
+import esfera from "../assets/images/paginas/home/nossossabores3.jpg";
+import evento1 from "../assets/images/paginas/home/eventos1.jpg";
+import evento2 from "../assets/images/paginas/home/eventos2.jpg";
+import evento3 from "../assets/images/paginas/home/eventos3.jpg";
 
 
 let loaderShown = false;
@@ -624,14 +624,14 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 					<div className="cards">
 						<div className="card-wrapper">
 							<div className="card">
-								<img src={tortalimao} alt="Ingredientes" />
+								<img src={processos1} alt="Doces de alta qualidade" />
 							</div>
 							<h3>Seleção de Ingredientes de Alta Qualidade</h3>
 						</div>
 
 						<div className="card-wrapper">
 							<div className="card">
-								<img src={viennoiseries} alt="Técnicas" />
+								<img src={tecnicas} alt="Técnicas" />
 							</div>
 							<h3>Técnicas Tradicionais e Inovadoras</h3>
 						</div>

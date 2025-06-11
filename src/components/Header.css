@@ -5,12 +5,58 @@
 
 .carousel {
 	display: flex;
-	width: 500%;
-	animation: 25s slide infinite;
+	width: 500vw; /* ou 100vw * quantidade de slides */
+	transition: transform 0.5s ease-in-out;
 }
 
+.carousel-wrapper {
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+}
+
+.nav-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav-arrow.left {
+  left: 1%;
+}
+
+.nav-arrow.right {
+  right: 1%;
+}
+
+.nav-arrow svg {
+  stroke: white;
+}
+
+
+
 .carousel img {
-	width: 100%;
+	min-width: 100vw;
+	width: 100vw;
+	flex-shrink: 0;
 	height: 75vh;
 	object-fit: cover;
 	scroll-snap-align: start;
@@ -68,3 +114,18 @@
 		transform: translateX(-400vw);
 	}
 }
+
+@media (max-width: 768px) {
+  .carousel img,
+  .static-image {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel img,
+  .static-image {
+    height: 40vh;
+  }
+}
+

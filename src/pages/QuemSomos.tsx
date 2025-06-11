@@ -2,16 +2,16 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "./QuemSomos.css";
-import quemSomosHeaderImage from "../assets/images/chefs/Quemsomosheader.jpg";
-import joaoquemprofile from "../assets/images/chefs/joaoquemsomos2.jpg";
-import natiquemprofile from "../assets/images/chefs/natiquemsomos.jpg";
+import quemSomosHeaderImage from "../assets/images/paginas/quemsomos/quemsomosheader.jpg";
+import joaoquemprofile from "../assets/images/paginas/quemsomos/joaoquemsomos.jpg";
+import natiquemprofile from "../assets/images/paginas/quemsomos/natiquemsomos.jpg";
 import qualidade from "../assets/images/icons/qualidade.png";
 import sustentabilidade from "../assets/images/icons/sustentabilidade.png";
 import experiencia from "../assets/images/icons/experiencia.png";
 import inovacao from "../assets/images/icons/inovacao.png";
 import carinho from "../assets/images/icons/carinho.png";
 import artesanal from "../assets/images/icons/artesanal.png";
-import proposito from "../assets/images/studiolike/proposito1.jpg";
+import proposito from "../assets/images/paginas/quemsomos/proposito.jpg";
 
 
 const QuemSomos = () => {

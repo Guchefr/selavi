@@ -2,9 +2,9 @@ import "./NossaEquipe.css"
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import nossosChefsHeaderImage from "../assets/images/chefs/nossoschefesheader.jpg";
-import joaoprofile from "../assets/images/chefs/joaoprofile.jpg";
-import natiprofile from "../assets/images/chefs/natiprofile.jpg";
+import nossosChefsHeaderImage from "../assets/images/paginas/nossaequipe/nossoschefesheader.jpg";
+import joaoprofile from "../assets/images/paginas/nossaequipe/joaoprofile.jpg";
+import natiprofile from "../assets/images/paginas/nossaequipe/natiprofile.jpg";
 
 const NossaEquipe = () => {
     return (

@@ -6,6 +6,7 @@ import endereco from '../assets/images/icons/local.png';
 import calendario from '../assets/images/icons/calendario.png';
 import pagamento from '../assets/images/icons/pagamento.png';
 
+
 const Footer = () => {
 	return (
 		<footer className="footer">

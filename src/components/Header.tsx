@@ -1,9 +1,12 @@
+import { useState, useEffect, useRef } from "react";
 import "./Header.css";
-import slide1 from "../assets/images/studiolike/slide1.jpg";
-import slide2 from "../assets/images/studiolike/slide2.jpg";
-import slide3 from "../assets/images/studiolike/slide3.jpg";
-import slide4 from "../assets/images/studiolike/slide4.jpg";
-import slide5 from "../assets/images/studiolike/slide5.jpg";
+import slide1 from "../assets/images/paginas/home/slide1.jpg";
+import slide2 from "../assets/images/paginas/home/slide2.jpg";
+import slide3 from "../assets/images/paginas/home/slide3.jpg";
+import slide4 from "../assets/images/paginas/home/slide4.jpg";
+import slide5 from "../assets/images/paginas/home/slide5.jpg";
+
+const slides = [slide1, slide2, slide3, slide4, slide5];
 
 interface HeaderProps {
 	isHome: boolean;
@@ -14,17 +17,59 @@ interface HeaderProps {
 }
 
 const Header = ({ isHome, image, height = "75vh", grayscale, className }: HeaderProps) => {
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const [paused, setPaused] = useState(false);
+	const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+
+	useEffect(() => {
+		if (!paused) {
+			intervalRef.current = setInterval(() => {
+				setCurrentIndex((prev) => (prev + 1) % slides.length);
+			}, 5000);
+		}
+
+		return () => {
+			if (intervalRef.current) clearInterval(intervalRef.current);
+		};
+	}, [paused]);
+
 	if (!isHome && !image) return null;
 
+	const goToSlide = (index: number) => {
+		if (index < 0) {
+			setCurrentIndex(slides.length - 1);
+		} else if (index >= slides.length) {
+			setCurrentIndex(0);
+		} else {
+			setCurrentIndex(index);
+		}
+	};
+
 	return (
-		<header className="header">
+		<header
+			className="header"
+			onMouseEnter={() => setPaused(true)}
+			onMouseLeave={() => setPaused(false)}
+		>
 			{isHome ? (
-				<div className="carousel">
-					<img src={slide1} id="photo1" alt="Slide 1" />
-					<img src={slide2} id="photo2" alt="Slide 2" />
-					<img src={slide3} id="photo3" alt="Slide 3" />
-					<img src={slide4} id="photo4" alt="Slide 4" />
-					<img src={slide5} id="" alt="Slide 5" />
+				<div className="carousel-wrapper">
+					<div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}vw)` }}>
+						{slides.map((src, index) => (
+							<img key={index} src={src} alt={`Slide ${index + 1}`} />
+						))}
+					</div>
+					<button className="nav-arrow left" onClick={() => goToSlide(currentIndex - 1)} aria-label="Previous slide">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+							<polyline points="15 18 9 12 15 6" />
+						</svg>
+					</button>
+
+					<button className="nav-arrow right" onClick={() => goToSlide(currentIndex + 1)} aria-label="Next slide">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+							<polyline points="9 18 15 12 9 6" />
+						</svg>
+					</button>
 				</div>
 			) : (
 				<img
@@ -33,7 +78,6 @@ const Header = ({ isHome, image, height = "75vh", grayscale, className }: Header
 					alt="Header"
 					style={{ height }}
 				/>
-
 			)}
 		</header>
 	);

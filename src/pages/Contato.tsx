@@ -6,9 +6,9 @@ import whatsappIcon from "../assets/images/icons/whats.png";
 import instagramIcon from "../assets/images/icons/insta.png";
 import emailIcon from "../assets/images/icons/email.png";
 
-import foto1 from "../assets/images/casa/casa1.jpg";
-import foto2 from "../assets/images/casa/casa2.jpg";
-import foto3 from "../assets/images/casa/casa3.jpg";
+import foto1 from "../assets/images/paginas/contato/casa1.jpg";
+import foto2 from "../assets/images/paginas/contato/casa2.jpg";
+import foto3 from "../assets/images/paginas/contato/casa3.jpg";
 
 const Contato = () => {
   return (
