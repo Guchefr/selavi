@@ -6,8 +6,8 @@ import "./NossasCriacoes.css";
 import img1 from "../assets/images/paginas/criacoes/cria1.jpg"
 import img2 from "../assets/images/paginas/criacoes/cria2.jpg";
 import img3 from "../assets/images/paginas/criacoes/cria3.jpg";
-import img4 from "../assets/images/paginas/criacoes/cria4.jpeg";
-import img5 from "../assets/images/paginas/criacoes/cria5.jpeg";
+import img4 from "../assets/images/paginas/criacoes/cria4.jpg";
+import img5 from "../assets/images/paginas/criacoes/cria5.jpg";
 import img6 from "../assets/images/paginas/criacoes/cria6.jpg";
 import img7 from "../assets/images/paginas/criacoes/cria7.jpg";
 import img8 from "../assets/images/paginas/criacoes/cria8.jpeg";
@@ -27,10 +27,14 @@ import img21 from "../assets/images/paginas/criacoes/cria21.jpg";
 import img22 from "../assets/images/paginas/criacoes/cria22.jpg";
 import img23 from "../assets/images/paginas/criacoes/cria23.jpg";
 import img24 from "../assets/images/paginas/criacoes/cria24.jpg";
+import img25 from "../assets/images/paginas/criacoes/cria25.jpg";
+import img26 from "../assets/images/paginas/criacoes/cria26.jpg";
+import img27 from "../assets/images/paginas/criacoes/cria27.jpg";
+import img28 from "../assets/images/paginas/criacoes/cria28.jpg";
 import instaIcon from "../assets/images/icons/insta.png"
 
 const imagens = [
-    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24
+    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28
 ];
 
 

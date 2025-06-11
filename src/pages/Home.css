@@ -202,6 +202,46 @@ box-shadow: 16px 18px 2px 0px #5c7f2f;
   background-color: beige; 
 }
 
+@media (max-width: 768px) {
+  .introducao {
+    padding: 2rem 1rem;
+  }
+
+  .introducao h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .introducao p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .btn-destaque {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card {
+    height: 250px;
+  }
+
+  .card-wrapper h3 {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .sabores .card img,
+  .eventos .card img {
+    border-radius: 15px;
+  }
+}
+
 
 @-webkit-keyframes animate-svg-stroke-1 {
   0% {

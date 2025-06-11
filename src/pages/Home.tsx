@@ -34,6 +34,20 @@ const Home = () => {
 		return () => clearTimeout(timer);
 	}, [loading]);
 
+	useEffect(() => {
+		if (!loading) {
+			document.body.id = "home";
+			window.dispatchEvent(new Event("loaderEnded"));
+		}
+	}, [loading]);
+
+	useEffect(() => {
+		return () => {
+			document.body.removeAttribute("id");
+		};
+	}, []);
+
+
 	if (loading) {
 		return (
 			<div className="loader-container">

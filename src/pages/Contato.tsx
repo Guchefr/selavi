@@ -1,3 +1,4 @@
+import { useState } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import "./Contato.css";
@@ -9,8 +10,12 @@ import emailIcon from "../assets/images/icons/email.png";
 import foto1 from "../assets/images/paginas/contato/casa1.jpg";
 import foto2 from "../assets/images/paginas/contato/casa2.jpg";
 import foto3 from "../assets/images/paginas/contato/casa3.jpg";
+import foto4 from "../assets/images/paginas/contato/casa4.jpg";
+import foto5 from "../assets/images/paginas/contato/casa5.jpg";
+import foto6 from "../assets/images/paginas/contato/casa6.jpg";
 
 const Contato = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   return (
     <>
       <NavBar />
@@ -63,14 +68,26 @@ const Contato = () => {
             Espaço externo: 2 mesas, 8 lugares.
           </p>
           <div className="galeria-fotos">
-            <img src={foto1} alt="Interior da confeitaria" />
-            <img src={foto2} alt="Vitrine de doces" />
-            <img src={foto3} alt="Área externa" />
+            {[foto1, foto2, foto3, foto4, foto5, foto6].map((foto, i) => (
+              <img
+                key={i}
+                src={foto}
+                alt={`Foto ${i + 1}`}
+                onClick={() => setSelectedImage(foto)}
+                className="galeria-item"
+              />
+            ))}
           </div>
+
         </section>
       </main>
-
       <Footer />
+      {selectedImage && (
+        <div className="modal-overlay" onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Ampliada" className="modal-image" />
+        </div>
+      )}
+
     </>
   );
 };

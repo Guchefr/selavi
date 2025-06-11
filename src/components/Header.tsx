@@ -5,8 +5,10 @@ import slide2 from "../assets/images/paginas/home/slide2.jpg";
 import slide3 from "../assets/images/paginas/home/slide3.jpg";
 import slide4 from "../assets/images/paginas/home/slide4.jpg";
 import slide5 from "../assets/images/paginas/home/slide5.jpg";
+import slide6 from "../assets/images/paginas/home/slide6.jpg";
+import slide7 from "../assets/images/paginas/home/slide7.jpg";
 
-const slides = [slide1, slide2, slide3, slide4, slide5];
+const slides = [slide1, slide2, slide3, slide4, slide5, slide6, slide7];
 
 interface HeaderProps {
 	isHome: boolean;
@@ -70,6 +72,16 @@ const Header = ({ isHome, image, height = "75vh", grayscale, className }: Header
 							<polyline points="9 18 15 12 9 6" />
 						</svg>
 					</button>
+					<div className="carousel-dots">
+						{slides.map((_, index) => (
+							<button
+								key={index}
+								className={`dot ${index === currentIndex ? "active" : ""}`}
+								onClick={() => setCurrentIndex(index)}
+								aria-label={`Aller au slide ${index + 1}`}
+							/>
+						))}
+					</div>
 				</div>
 			) : (
 				<img

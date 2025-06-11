@@ -1,6 +1,6 @@
 .header-nossas-criacoes {
   object-fit: cover;
-  object-position: center center; /* foca no topo inicialmente */
+  object-position: center center;
 }
 
 @media (min-width: 1024px) {
@@ -11,7 +11,7 @@
 }
 
 .nossascriacoes-container {
-  max-width: 90%;
+  max-width: 75%;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
@@ -42,7 +42,7 @@
 
 .criacao-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 4;
   object-fit: cover;
   display: block;
   transition: transform 0.3s;
@@ -136,6 +136,9 @@
   .criacao-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .nossascriacoes-container {
+  max-width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -148,6 +151,10 @@
   .criacao-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+  }
+
+  .nossascriacoes-container {
+  max-width: 90%;
   }
 
   .criacao-overlay img {

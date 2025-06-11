@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import QuemSomos from "./pages/QuemSomos";
 import NossaEquipe from "./pages/NossaEquipe";
 import NossasCriacoes from "./pages/NossasCriacoes";
 import Contato from "./pages/Contato";
-
+import ScrollToTop from "./components/ScrollToTop";
 import FloatingButtons from "./components/FloatingButtons";
 
 import "./App.css";
@@ -12,8 +13,10 @@ import "./App.css";
 
 
 function App() {
+
 	return (
 		<Router>
+			<ScrollToTop />
 			<FloatingButtons />
 
 			<Routes>

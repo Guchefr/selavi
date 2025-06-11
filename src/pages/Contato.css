@@ -48,9 +48,9 @@
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: 0 0 8px rgba(92,127,47,0.3);
-    display: flex;          /* ativa flexbox */
-  flex-direction: column; /* organiza em coluna */
-  justify-content: center; /* centraliza verticalmente */
+    display: flex;          
+  flex-direction: column; 
+  justify-content: center; 
   text-align: center;  
 }
 
@@ -127,19 +127,54 @@
 }
 
 .galeria-fotos img {
-  width: 320px;
-  height: 210px;
+  width: 360px;
+  height: 300px;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid #5c7f2f;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .galeria-fotos img:hover {
   transform: scale(1.05);
 }
 
-/* Responsivo */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
 @media (max-width: 900px) {
   .contato-top {
     flex-direction: column;
