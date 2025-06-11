@@ -1,0 +1,24 @@
+[33mf0ee8ce[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: pull: Merge made by the 'ort' strategy.
+[33m72e091e[m HEAD@{1}: commit: update
+[33m2fb1fa2[m HEAD@{2}: reset: moving to 2fb1fa2
+[33m5b07ee3[m HEAD@{3}: reset: moving to origin/main
+[33m2fb1fa2[m HEAD@{4}: reset: moving to ORIG_HEAD
+[33m5b07ee3[m HEAD@{5}: pull: Fast-forward
+[33m2fb1fa2[m HEAD@{6}: commit: delete unused img
+[33md743387[m HEAD@{7}: commit: done
+[33ma47e516[m HEAD@{8}: commit: done
+[33mc6188b2[m HEAD@{9}: commit: final touches
+[33m1e3b92a[m HEAD@{10}: commit: scroll
+[33mc4f8657[m HEAD@{11}: commit: correções
+[33m3beb4ce[m HEAD@{12}: commit: whatsapp
+[33m8210ebe[m HEAD@{13}: commit: media queries
+[33m9840deb[m HEAD@{14}: commit: footer relook
+[33m0b921ea[m HEAD@{15}: commit: criacoes
+[33m9b25523[m HEAD@{16}: commit: maps
+[33m2d2f51c[m HEAD@{17}: commit: loader and startpages
+[33m45678c9[m HEAD@{18}: commit: loader
+[33m0ef6e44[m HEAD@{19}: commit: homepage
+[33m3118ab2[m HEAD@{20}: commit: header
+[33m2c28cf1[m HEAD@{21}: commit: navbar start
+[33m61a6237[m HEAD@{22}: Branch: renamed refs/heads/main to refs/heads/main
+[33m61a6237[m HEAD@{24}: commit (initial): freelance
