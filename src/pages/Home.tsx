@@ -638,21 +638,21 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 					<div className="cards">
 						<div className="card-wrapper">
 							<div className="card">
-								<img src={processos1} alt="Doces de alta qualidade" />
+								<img src={processos1} alt="Doces de alta qualidade" title="Usamos os melhores ingredientes" />
 							</div>
 							<h3>Seleção de Ingredientes de Alta Qualidade</h3>
 						</div>
 
 						<div className="card-wrapper">
 							<div className="card">
-								<img src={tecnicas} alt="Técnicas" />
+								<img src={tecnicas} alt="Técnicas" title="Verdadeiro savoir-faire" />
 							</div>
 							<h3>Técnicas Tradicionais e Inovadoras</h3>
 						</div>
 
 						<div className="card-wrapper">
 							<div className="card">
-								<img src={parisbrest} alt="Cuidado no processo" />
+								<img src={parisbrest} alt="Cuidado no processo" title="Carinho em todos os preparo" />
 							</div>
 							<h3>Cuidado em Cada Detalhe do Processo</h3>
 						</div>
@@ -679,14 +679,14 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 
 
 						<div className="card">
-							<img src={tartefraise} alt="Tarte aux Fraises" title="Torta de Morango" />
+							<img src={tartefraise} alt="Entrêmet France" title="Entrêment 'La France'" />
 						</div>
 
 
 
 
 						<div className="card">
-							<img src={esfera} alt="Esfera Framboesa" title="Esfera" />
+							<img src={esfera} alt="Entrêmet Coração" title="Entrêmet Coração" />
 						</div>
 
 					</div>
