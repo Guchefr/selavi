@@ -1,4 +1,5 @@
 .footer {
+  
   position: relative;
   background-color: #5c7f2f;
   color: white;
@@ -11,7 +12,7 @@
 .footer::before {
   content: "";
   position: absolute;
-  top: 1.5rem;
+  top: 2.5rem;
   right: 1rem;
   width: 180px;
   height: 90px;
@@ -32,6 +33,24 @@
   mix-blend-mode: multiply;
   opacity: 0.4;
   z-index: 0;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0; 
+  right: 0;
+  
+  width: 300px;
+  height: 200px;
+  background-image: url('../assets/images/icons/flores.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+
+  opacity: 0.8;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .footer * {
@@ -143,9 +162,10 @@
   .footer::before {
     width: 130px;
     height: 65px;
-    top: 0.8rem;
+    top: 1.8rem;
     right: 0.5rem;
     transform: rotate(12deg);
   }
 }
+
 

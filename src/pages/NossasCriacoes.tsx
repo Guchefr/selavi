@@ -71,8 +71,11 @@ const NossasCriacoes = () => {
                 </div>
 
                 <div className="cardapio-pdf">
-                    <a href="/cardapio.pdf" target="_blank" rel="noopener noreferrer" className="btn-cardapio">
-                        Veja nosso cardápio
+                    <a href="/cardapioatual.pdf" target="_blank" rel="noopener noreferrer" className="btn-cardapio">
+                        Veja nosso cardápio de bebidas e salgados
+                    </a>
+                    <a href="/encomendas.pdf" target="_blank" rel="noopener noreferrer" className="btn-cardapio">
+                        Veja nossas opções de encomendas
                     </a>
                 </div>
             </main>

@@ -66,6 +66,7 @@ const Footer = () => {
 			</div>
 
 			<p className="footer-bottom">
+
 				© 2025 Selavi Confeitaria - Todos os direitos reservados <br />
 				<span className="cnpj-text">CNPJ: 42.543.142/0001-45</span>
 			</p>
