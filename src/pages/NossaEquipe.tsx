@@ -30,11 +30,11 @@ const NossaEquipe = () => {
                 <div className="chefbloco2">
                     <div className="chef-profile">
                         <img src={natiprofile} className="nati" alt="Chef Natália" />
-                        <p>Chef Boulangère Natália Moura</p>
+                        <p>Chef Boulangère Natália Mora</p>
                     </div>
                     <div className="nossoschefs-texto2">
                         <p>
-                            Ao lado de sua noiva, <span className="chef-name">Chef Natália Moura</span>, com sua herança de panificação italiana, eles criaram a Selavì, no dia 09/09/2021. Uma confeitaria onde cada doce é feito com amor, técnica e ingredientes especiais, sempre com o objetivo de oferecer mais do que um simples sabor, mas uma verdadeira experiência.
+                            Ao lado de sua noiva, <span className="chef-name">Chef Natália Mora</span>, com sua herança de panificação italiana, eles criaram a Selavì, no dia 09/09/2021. Uma confeitaria onde cada doce é feito com amor, técnica e ingredientes especiais, sempre com o objetivo de oferecer mais do que um simples sabor, mas uma verdadeira experiência.
                             Com quase 4 anos de atuação, a Selavì já conquistou uma clientela fiel, que compartilha da nossa paixão por entregar qualidade e dedicação em cada doce. Continuamos com o mesmo propósito de oferecer, a cada pedaço, uma verdadeira experiência de carinho e sabor.
                         </p>
                     </div>
