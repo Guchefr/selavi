@@ -29,7 +29,7 @@ const QuemSomos = () => {
                         <div className="quemsomos-texto1">
                             <h2>Uma confeitaria com alma</h2>
                             <p>
-                                A Selavì nasceu da paixão do Chef João pela confeitaria, descoberta durante seu curso de gastronomia e aprimorada no renomado Le Cordon Bleu, em Paris. Ao lado da Chef Natália, especialista em panificação com raízes italianas, eles fundaram a Selavì em Santos-SP, em 09/09/2021. Juntos, unem técnica, estética e emoção para criar experiências únicas através da confeitaria.
+                                A Selavì nasceu da paixão do Chef João pela confeitaria, descoberta durante seu curso de gastronomia, e aprimorada no renomado Le Cordon Bleu, em Paris. Ao lado da Chef Natália, especialista em panificação com raízes italianas, eles fundaram a Selavì em Santos-SP, em 09/09/2021. Juntos, unem técnica, estética e emoção para criar experiências únicas através da confeitaria.
                             </p>
                         </div>
 
