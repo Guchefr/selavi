@@ -614,7 +614,7 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 					<div className="texto">
 						<h1>
 							Selavi — <i>c’est la vie…</i><br />
-							<span>mais bem mais gostosa.</span>
+							<span>porém bem mais gostosa.</span>
 						</h1>
 						<p>
 							Um toque francês, um sabor brasileiro. Na Selavi, a doçura está em cada detalhe nas receitas feitas com carinho, na leveza dos ingredientes e no prazer de viver o agora.
