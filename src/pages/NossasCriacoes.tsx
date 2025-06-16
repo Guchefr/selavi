@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -31,14 +32,39 @@ import img25 from "../assets/images/paginas/criacoes/cria25.jpg";
 import img26 from "../assets/images/paginas/criacoes/cria26.jpg";
 import img27 from "../assets/images/paginas/criacoes/cria27.jpg";
 import img28 from "../assets/images/paginas/criacoes/cria28.jpg";
+import img29 from "../assets/images/paginas/criacoes/cria29.jpg";
+import img30 from "../assets/images/paginas/criacoes/cria30.jpg";
+import img31 from "../assets/images/paginas/criacoes/cria31.jpg";
+import img32 from "../assets/images/paginas/criacoes/cria32.jpg";
 import instaIcon from "../assets/images/icons/insta.png"
 
 const imagens = [
-    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28
+    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31, img32
 ];
 
-
 const NossasCriacoes = () => {
+    const [showAll, setShowAll] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+    const gridRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const mobile = window.innerWidth <= 768;
+            setIsMobile(mobile);
+            if (!mobile) setShowAll(true);
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const imagensExibidas = isMobile && !showAll ? imagens.slice(0, 16) : imagens;
+
+    const handleToggle = () => {
+        setShowAll((prev) => !prev);
+    };
+
     return (
         <>
             <NavBar />
@@ -49,13 +75,18 @@ const NossasCriacoes = () => {
                 className="header-nossas-criacoes"
             />
 
-
             <main className="nossascriacoes-container">
                 <h2>Algumas de nossas criações</h2>
 
-                <div className="criacao-grid">
-                    {imagens.map((img, i) => (
-                        <div key={i} className="criacao-card">
+                <div
+                    ref={gridRef}
+                    className={`criacao-grid ${showAll ? "expandido" : ""}`}
+                >
+                    {imagensExibidas.map((img, i) => (
+                        <div
+                            key={i}
+                            className={`criacao-card ${isMobile && showAll && i >= 16 ? "fade-in" : ""}`}
+                        >
                             <img src={img} alt={`Criação ${i + 1}`} />
                             <div className="criacao-overlay">
                                 <a
@@ -63,12 +94,22 @@ const NossasCriacoes = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <img src={instaIcon} alt="Instagram" /></a>
+                                    <img src={instaIcon} alt="Instagram" />
+                                </a>
                                 <span>Siga a gente @selaviconfeitariaecafe</span>
                             </div>
                         </div>
                     ))}
                 </div>
+
+                {isMobile && (
+                    <button
+                        className="ver-mais-btn"
+                        onClick={handleToggle}
+                    >
+                        {showAll ? "Ver menos..." : "Ver mais..."}
+                    </button>
+                )}
 
                 <div className="cardapio-pdf">
                     <a href="/cardapioatual.pdf" target="_blank" rel="noopener noreferrer" className="btn-cardapio">

@@ -130,10 +130,42 @@
   box-shadow: 0 8px 15px rgba(92, 127, 47, 0.7);
 }
 
+.ver-mais-btn {
+  margin: 20px auto;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #5c7f2f;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 6px rgba(92, 127, 47, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ver-mais-btn:hover {
+  background: linear-gradient(135deg, #6ea22f, #4c6b26);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(92, 127, 47, 0.7);
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 
 
-/* Responsividade */
 @media (max-width: 1024px) {
   .criacao-grid {
     grid-template-columns: repeat(3, 1fr);
