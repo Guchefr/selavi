@@ -645,14 +645,14 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 
 						<div className="card-wrapper">
 							<div className="card">
-								<img src={tecnicas} alt="Técnicas" title="Verdadeiro savoir-faire" />
+								<img src={tecnicas} alt="Técnicas" title="Um verdadeiro savoir-faire" />
 							</div>
 							<h3>Técnicas Tradicionais e Inovadoras</h3>
 						</div>
 
 						<div className="card-wrapper">
 							<div className="card">
-								<img src={parisbrest} alt="Cuidado no processo" title="Carinho em todos os preparo" />
+								<img src={parisbrest} alt="Cuidado no processo" title="Carinho em todos os preparos" />
 							</div>
 							<h3>Cuidado em Cada Detalhe do Processo</h3>
 						</div>
