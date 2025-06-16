@@ -60,7 +60,7 @@ const Footer = () => {
 
 							Pagamentos:
 						</h3>
-						<p><img src={pagamento} alt="Pagamentos" className="footer-icon" /> Aceitamos todos os cartões, Pix, VR e VA</p>
+						<p><img src={pagamento} alt="Pagamentos" className="footer-icon" /> Aceitamos todos os cartões, VR, VA e Pix</p>
 					</div>
 				</div>
 			</div>
