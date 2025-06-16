@@ -68,7 +68,17 @@ const Footer = () => {
 			<p className="footer-bottom">
 
 				© 2025 Selavi Confeitaria - Todos os direitos reservados <br />
-				<span className="cnpj-text">CNPJ: 42.543.142/0001-45</span>
+				<span className="cnpj-text">CNPJ: 42.543.142/0001-45</span> <br />
+				Desenvolvido por{' '}
+				<a className="footer-portfolio"
+					href="https://gustavo-portfolio-theta.vercel.app/"
+					target="_blank"
+					title="Portfolio Gustavo C."
+					rel="noopener noreferrer"
+
+				>
+					Gustavo C.
+				</a>
 			</p>
 		</footer>
 
