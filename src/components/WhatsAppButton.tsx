@@ -25,9 +25,11 @@ const WhatsAppButton = () => {
 
     if (!visible) return null;
 
+    const mensagem = encodeURIComponent("Olá, venho através do site...");
+
     return (
         <a
-            href="https://wa.me/5513996298156"
+            href={`https://wa.me/5513996298156?text=${mensagem}`}
             target="_blank"
             rel="noopener noreferrer"
             title="Converse conosco no WhatsApp"

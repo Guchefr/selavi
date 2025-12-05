@@ -27,7 +27,7 @@ const Footer = () => {
 
 							Horários:
 						</h3>
-						<p><img src={calendario} alt="Horários" className="footer-icon" /> Terça a Domingo: 10h30 às 20h</p>
+						<p><img src={calendario} alt="Horários" className="footer-icon" /> De Segunda a Sábado: 10h30 às 20h</p>
 					</div>
 				</div>
 

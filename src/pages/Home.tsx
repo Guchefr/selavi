@@ -16,6 +16,7 @@ import evento2 from "../assets/images/paginas/home/eventos2.jpg";
 import evento3 from "../assets/images/paginas/home/eventos3.jpg";
 
 
+
 let loaderShown = false;
 
 
@@ -697,8 +698,7 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 			<section className="eventos">
 				<div className="container">
 					<h2>Ecomendas e eventos</h2>
-					<p>
-						Natal, Páscoa, Dia das Mães, aniversários ou eventos especiais, na Selavì, criamos doces sob encomenda para tornar sua celebração ainda mais memorável. Fale com a gente e descubra como podemos adoçar o seu momento.
+					<p>Nesse Natal encomende conosco para tornar sua celebração ainda mais memorável.
 					</p>
 
 					<div className="cards">
@@ -723,7 +723,12 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 
 					</div>
 
+					<div id="cardapionatal">
+						<a href="/cardapionatal2025.pdf" target="_blank" rel="noopener noreferrer" className="btn-cardapio">
+							Veja nosso cardápio de Natal 2025
+						</a></div>
 					<button className="btn-destaque" onClick={() => navigate("/contato")}>Contato</button>
+
 				</div>
 			</section>
 			<Footer />

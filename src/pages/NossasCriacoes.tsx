@@ -118,6 +118,9 @@ const NossasCriacoes = () => {
                     <a href="/encomendas.pdf" target="_blank" rel="noopener noreferrer" className="btn-cardapio">
                         Veja nossas opções de encomendas
                     </a>
+                    <a href="/cardapionatal2025.pdf" target="_blank" rel="noopener noreferrer" className="btn-cardapio" id="cardapionatal" >
+                        Veja nosso cardápio de Natal 2025
+                    </a>
                 </div>
             </main>
 

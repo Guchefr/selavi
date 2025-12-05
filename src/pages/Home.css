@@ -36,6 +36,12 @@ body {
   box-shadow: 0 8px 15px rgba(92, 127, 47, 0.7);
 }
 
+#cardapionatal {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
 /* Seção Introdução */
 .introducao {
   padding: 4rem 1rem;
