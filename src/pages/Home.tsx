@@ -723,10 +723,7 @@ C 1632.68 1025.45 1632.77 1018.26 1629.00 1013.00 Z" className="svg-elem-58"></p
 
 					</div>
 
-					<div id="cardapionatal">
-						<a href="/cardapionatal2025.pdf" target="_blank" rel="noopener noreferrer" className="btn-cardapio">
-							Veja nosso cardápio de Natal 2025
-						</a></div>
+
 					<button className="btn-destaque" onClick={() => navigate("/contato")}>Contato</button>
 
 				</div>
